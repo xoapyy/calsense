@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #1C1C1C;
+  --color-card: #2C2C2C;
+  --color-text: #FFFFFF;
+  --color-border: #3C3C3C;
+}
+
+body {
+  @apply bg-[var(--color-bg)] font-mono text-[var(--color-text)];
+  font-family: 'Space Mono', monospace;
+}
+
+.chat-container {
+  height: calc(100vh - 10rem);
+}
+
+/* Calendar hover effects */
+.calendar-day:hover {
+  @apply bg-[var(--color-bg)] transition-colors;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
